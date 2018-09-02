@@ -1,6 +1,10 @@
 class ConsoleLogToDiv {
 	constructor() {
-		document.addEventListener("DOMContentLoaded", () => { this.init() });
+		if (document.readyState === "complete" || document.readyState === "loaded") {
+     		this.init();
+		} else {
+			document.addEventListener("DOMContentLoaded", () => { this.init(); });
+		}
 	}
 
 	init() {
