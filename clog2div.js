@@ -47,7 +47,7 @@ class ConsoleLogToDiv {
 	createDiv() {
 		this.div = document.createElement("div"); 
 		this.div.id = "clog2div";
-		this.div.style = divStyle;
+		this.div.style = this.divStyle;
 		document.body.appendChild(this.div);
 	}
 
